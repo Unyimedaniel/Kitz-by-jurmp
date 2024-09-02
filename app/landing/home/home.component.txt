@@ -1,0 +1,173 @@
+<!-- Hero -->
+<div class="hr_main">
+  <div class="top">
+    <div class="cursor_a"></div>
+    <a href="#" class="sale_call">
+      <span>✨ <b>Blueprint</b> is here! For a limited time, get <small>40%</small> off your first project ✨</span>
+    </a>
+    <h2><span>Creative Design</span> <br> done right</h2>
+
+    <div class="fcc_pl">
+      <img src="./../../../assets/images/facepile.svg" alt="Faces">
+    </div>
+    <p>Add the best creatives in the world to your team, no hiring required. Our vetted designers are ready to level up your brand.</p>
+    <ul>
+      <li><a class="start" href="#">Get started</a></li>
+      <button (click)="openModal()">Open Video Modal</button>
+      <app-video-modal [showModal]="modalOpen"></app-video-modal>
+    </ul>
+  </div>
+</div>
+
+<!-- Customer Reel -->
+<div class="cst_rl_con">
+  <div class="top flex flex-col items-center gap-7 lg:gap-10 p-5">
+    <h2 class="m-0 font-medium tracking-tighter text-center w-full text-4xl lg:w-[55vw] lg:text-8xl">Meet your new design team</h2>
+    <p class="text-center">86,265 PIXEL-PERFECT PROJECTS DELIVERED TO 250+ HAPPY CUSTOMERS</p>
+    <a href="#" class="btn_pri">See our work</a>
+  </div>
+  <app-brands-ticker class="w-[80vw] my-9 lg:my-10"></app-brands-ticker>
+</div>
+
+<!-- Video Container -->
+<div class="video_con">
+  <app-video-container class="w-full"></app-video-container>
+</div>
+
+
+<!-- prx-a -->
+<div class="prx_con px-4 py-[8vw] flex flex-col gap-20">
+  <div class="top flex flex-col items-center gap-[1.625rem]">
+    <h6 class="uppercase font-normal text-sm tracking-wide m-0 font-semibold text-kitz-primary">Great workflow</h6>
+    <div class="hdr w-[44vw] flex flex-col items-center gap-4">
+      <h2 class="text-5xl tracking-tighter text-center leading-[3.5rem] m-0">Design, animate, and ship under one roof</h2>
+    </div>
+    <p class="w-[39vw] text-center text-lg font-light">Get unlimited access to our vetted team of graphic design experts. We turn businesses into unstoppable marketing machines.</p>
+    <a href="#" class="btn_pri">See our work</a>
+  </div>
+</div>
+
+
+<!-- prx-a -->
+<div class="flex flex-col gap-9 py-24 px-[6vw]">
+  <div class="grid grid-cols-2 gap-9 h-[32vw]">
+    <div class="rounded-[0.625rem] border-[0.0313rem] border-solid p-10">1</div>
+    <div class="rounded-[0.625rem] border-[0.0313rem] border-solid p-10">1</div>
+  </div>
+  <div class="grid grid-cols-3 gap-9 h-[32vw]">
+    <div class="rounded-[0.625rem] border-[0.0313rem] border-solid p-10">1</div>
+    <div class="rounded-[0.625rem] border-[0.0313rem] border-solid p-10">1</div>
+    <div class="rounded-[0.625rem] border-[0.0313rem] border-solid p-10">1</div>
+  </div>
+</div>
+
+
+<!-- Service List -->
+<div class="srv_list_con">
+  <div class="top">
+    <div class="hdr">
+      <h2>Some header span two lines</h2>
+    </div>
+    <ul class="crw">
+      <li>
+        <a href="#">
+          <div class="pls">
+            <span>Logo design</span>
+            <span>Brand development</span>
+            <span>Brand design</span>
+            <span>Custom branding</span>
+            <span>Brand guidelines</span>
+            <span>Story development</span>
+          </div>
+          <h2>Brand Design</h2>
+          <!-- <p>Get tailored brand expertise to suit your needs, from brand development to bespoke branding solutions.</p> -->
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="pls">
+            <span>Post Design</span>
+            <span>Social Media Collateral</span>
+            <span>Social Media Video Content</span>
+            <span>Concept Design</span>
+          </div>
+          <h2>Social Media Creative</h2>
+          <!-- <p>Unique designs for all your social media platforms. Whether it's static images, animations, or videos, we've got you covered from Instagram to YouTube and Facebook.</p> -->
+        </a>
+      </li>
+    </ul>
+
+    <ul class="bsd">
+      <li>
+        <a href="#">
+          <div class="pls">
+            <span>Branding</span>
+            <span>Design</span>
+            <span>Development</span>
+            <span>Marketing</span>
+            <span>Identity</span>
+          </div>
+          <h2>Brand Identity design</h2>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="pls">
+            <span>Branding</span>
+            <span>Design</span>
+            <span>Development</span>
+            <span>Marketing</span>
+            <span>Identity</span>
+          </div>
+          <h2>Brand Identity design</h2>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h2>Brand Identity design</h2>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h2>Brand Identity design</h2>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h2>Brand Identity design</h2>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h2>Brand Identity design</h2>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="btm">
+    <a href="#">See all design services</a>
+  </div>
+</div>
+
+<div class="gt_str_con">
+    <h3>Ready to level up your brand?</h3>
+    <p>Create a project or start your subscription in 10 minutes or less. Try Kitz risk-free for 30 days.</p>
+    <ul>
+      <li><a class="demo" href="#">Get a demo</a></li>
+      <li><a class="pricing" href="#">See pricing</a></li>
+    </ul>
+    <div class="img_blc">
+      <img [src]="ftrBg">
+    </div>
+</div>
+
+
+
+

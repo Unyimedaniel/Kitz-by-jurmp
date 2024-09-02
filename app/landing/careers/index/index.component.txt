@@ -1,0 +1,30 @@
+<!-- Index Page for Careers -->
+
+<!-- Hero -->
+<div class="cr_hr_con">
+  <small>Careers at Kitz</small>
+  <h2>
+    <span>Design a</span>
+    <span>better world.</span>
+  </h2>
+  <p>Join a design team like no other.</p>
+  <a href="#">See all open positions</a>
+</div>
+
+
+<!-- Video -->
+<div class="cr_vid_con">
+  <div class="vid_con" (click)="toggleVideo()">
+    <div class="icn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" class="main-grid-item-icon" fill="#ffffff" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+      </svg>
+    </div>
+    <video *ngIf="showVideo" controls autoplay width="100%" height="100%">
+      <source src="./../../../../assets/videos/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img *ngIf="!showVideo" src="./../../../../assets/images/vid_thum.png" alt="Video Thumbnail">
+  </div>
+</div>
+
