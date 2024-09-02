@@ -1,0 +1,56 @@
+<div class="lnd_main_con">
+  <div class="nv_br">
+    <div class="lft">
+      <div class="lgo">
+        <a href="#">
+          <img src="./../../../../../assets/images/logo.svg" alt="Kitz">
+          <!-- <small>by Jurmp</small> -->
+        </a>
+      </div>
+
+      <ul class="mnu_main">
+        <ul class="mnu_a">
+          <li>
+            <a href="#" label="Capabilities" class="drp_btn" (click)="openMenu()">
+              <span>Capabilities</span>
+              <span class="icn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" label="Why Kitz">Why Kitz?</a></li>
+          <li><a href="#" label="Our People">How it works</a></li>
+          <li><a href="#" label="Our Work">Our Work</a></li>
+          <li><a href="#" label="Pricing">Pricing</a></li>
+          <li><a href="#" label="Resources">Resources</a></li>
+          <li></li>
+        </ul>
+        <ul class="mnu_b">
+          <li><a href="#">Build It</a></li>
+          <li><a href="#">For Business</a></li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="rgt">
+      <ul>
+        <li>
+          <a href="login" class="login">Sign In</a>
+        </li>
+
+        <li>
+          <a href="demo" class="btn_pri_outline">Book a call</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="l_drp_down" [ngClass]="{
+    'drp_open': drpStatus, 'drp_close': !drpStatus
+  }">
+    Drop
+  </div>
+
+</div>

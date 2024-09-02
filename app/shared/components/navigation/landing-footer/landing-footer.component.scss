@@ -1,0 +1,288 @@
+footer {
+  .ftr_con {
+    background: white;
+    padding: 5.625rem 3.9vw 4.625rem 3.9vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    @media screen and (max-width: 992px) {
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 3.125rem 6vw;
+      gap: 1.25rem;
+    }
+
+    .top {
+      display: flex;
+      gap: 8vw;
+      border-top: 0.0625rem solid #f1f1f1;
+      border-bottom: 0.0625rem solid #f1f1f1;
+      padding-top: 4vw;
+      padding-bottom: 8vw;
+
+      @media screen and (max-width: 992px) {
+      }
+
+      @media screen and (max-width: 600px) {
+        border-bottom: unset;
+        flex-direction: column;
+        padding-top: 12vw;
+        padding-bottom: 8vw;
+      }
+
+      .lft {
+        width: 24vw;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        align-items: flex-start;
+
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+
+        .logo {
+
+          @media screen and (max-width: 992px) {
+          }
+
+          @media screen and (max-width: 600px) {
+          }
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 0.8125rem;
+          letter-spacing: 0.01rem;
+          line-height: 20px;
+          color: #434343;
+
+          @media screen and (max-width: 992px) {
+          }
+
+          @media screen and (max-width: 600px) {
+          }
+        }
+
+        a.see {
+          background: var(--color-primary);
+          color: var(--text-white);
+          display: inline-flex;
+          height: 3rem;
+          align-items: center;
+          padding: 0px 2rem;
+          border-radius: 2.5rem;
+          font-weight: 600;
+
+          @media screen and (max-width: 992px) {
+          }
+
+          @media screen and (max-width: 600px) {
+          }
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        > ul {
+          display: flex;
+          gap: 1.125rem;
+          margin-top: 0.5rem;
+
+          @media screen and (max-width: 992px) {
+          }
+
+          @media screen and (max-width: 600px) {
+          }
+
+          li {
+            @media screen and (max-width: 992px) {
+            }
+
+            @media screen and (max-width: 600px) {
+            }
+
+            a {
+              display: flex;
+              height: 2.75rem;
+              align-items: center;
+              border-radius: 2.5rem;
+
+              @media screen and (max-width: 992px) {
+              }
+
+              @media screen and (max-width: 600px) {
+              }
+
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+
+      .rgt {
+        display: flex;
+        flex: 1;
+        gap: 6rem;
+
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+        }
+
+        ul.col_lim {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          transition: all 0.5s ease;
+
+          @media screen and (max-width: 992px) {
+          }
+
+          @media screen and (max-width: 600px) {
+            height: 2.125rem;
+            overflow: hidden;
+            gap: 0.78rem;
+
+            &:hover {
+              height: unset;
+              overflow: unset;
+              margin-bottom: 1.875rem;
+
+              li.hdr {
+                transition: all 0.5s ease;
+
+                span.icn {
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+
+
+          li {
+            transition: all 0.5s ease;
+
+            @media screen and (max-width: 992px) {
+            }
+
+            @media screen and (max-width: 600px) {
+            }
+
+            a {
+              font-weight: 300;
+              font-size: 0.9375rem;
+              line-height: 1.5rem;
+              letter-spacing: 0.02rem;
+              position: relative;
+
+              @media screen and (max-width: 992px) {
+              }
+
+              @media screen and (max-width: 600px) {
+              }
+
+              &:hover {
+                &:after {
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 0.5px;
+                  background: var(--color-secondary);
+                  bottom: -1px;
+                  left: 0px;
+                }
+              }
+            }
+          }
+
+          .hdr {
+            margin-bottom: 0rem;
+            color: var(--color-secondary);
+            // font-weight: 500;
+            // transition: all 0.5s ease;
+            // font-size: 1rem;
+            // letter-spacing: 0.02rem;
+
+            font-size: 0.875rem;
+            font-weight: 600;
+            position: relative;
+            display: flex;
+            height: 40px;
+            align-items: center;
+            gap: 4px;
+
+            @media screen and (max-width: 992px) {
+            }
+
+            @media screen and (max-width: 600px) {
+              align-items: center;
+              justify-content: space-between;
+              padding-bottom: 0.9375rem;
+              border-bottom: 0.0625rem solid #f1f1f1;
+              display: flex;
+              border-width: 0.0313rem;
+            }
+
+            span.icn {
+              display: none;
+
+              @media screen and (max-width: 992px) {
+              }
+
+              @media screen and (max-width: 600px) {
+                display: flex;
+                transition: all 0.5s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .btm {
+      @media screen and (max-width: 992px) {
+      }
+
+      @media screen and (max-width: 600px) {
+      }
+
+      h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-bottom: 0.875rem;
+
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) {
+        }
+      }
+
+      p {
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.25rem;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 992px) {
+        }
+
+        @media screen and (max-width: 600px) {
+        }
+      }
+    }
+  }
+}

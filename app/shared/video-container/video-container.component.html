@@ -1,0 +1,22 @@
+<div class="px-[6vw] lg:px-[10vw] w-full my-10">
+  <div
+    class="bg-slate-100 flex flex-col items-center justify-center min-h-[58vw] lg:min-h-[38vw] relative cursor-pointer rounded-xl"
+    (click)="toggleVideo()"
+  >
+    <video
+      #video
+      class="video-element w-full h-full rounded-xl"
+      controls
+      [class.show]="isPlaying"
+    >
+      <source src="./../../../assets/videos/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div
+      class="absolute inset-0 flex items-center justify-center"
+      *ngIf="!isPlaying"
+    >
+      <img src="play-button-icon.png" alt="Play Button" class="w-16 h-16" />
+    </div>
+  </div>
+</div>

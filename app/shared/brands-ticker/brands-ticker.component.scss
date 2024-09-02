@@ -1,0 +1,23 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.relative::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to right, rgba(255, 253, 249, 1) 0%, rgba(255, 253, 249, 0) 20%, rgba(255, 253, 249, 0) 80%, rgba(255, 253, 249, 1) 100%);
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}

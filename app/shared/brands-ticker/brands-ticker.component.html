@@ -1,0 +1,13 @@
+<div class="relative overflow-hidden whitespace-nowrap">
+  <div
+    class="ticker flex  space-x-8 lg:space-x-10 gap-8 lg:gap-10 animate-marquee"
+    #tickerContainer
+  >
+    <img
+      *ngFor="let company of companies"
+      [src]="company.logo"
+      [alt]="company.name"
+      class="h-8 w-auto"
+    />
+  </div>
+</div>
