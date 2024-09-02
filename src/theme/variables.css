@@ -1,0 +1,35 @@
+/* Ionic Variables and Theming. */
+/* This is just a placeholder file For more info, please see: */
+/* https://ionicframework.com/docs/theming/basics */
+
+/* To quickly generate your own theme, check out the color generator */
+/* https://ionicframework.com/docs/theming/color-generator */
+
+:root {
+  --color-primary: #4353ff;
+  --color-secondary: #080808;
+  --color-text: var(--color-secondary);
+
+  --text-blue: #2f77eb;
+  --black-56: hsla(0,0%,8%,.56);
+  --black-24: hsla(0,0%,8%,.24);
+  --white-56: hsla(0,0%,100%,.56);
+  --white-24: hsla(0,0%,100%,.24);
+  --gray-50: hsla(0,0%,86%,.5);
+
+  --text-black: var(--color-text);
+  --text-black-02: hsla(0,0%,8%,.02);
+  --text-black-16: hsla(0,0%,8%,.16);
+  --text-black-32: hsla(0,0%,8%,.32);
+  --text-black-56: hsla(0,0%,8%,.56);
+  --text-gray-alpha: 56;
+  --text-gray: hsla(0,0%,8%,.56);
+  --text-light-gray-alpha: 32;
+  --text-light-gray: var(--text-black-32);
+  --text-white: #fff;
+  --text-dark-blue: #0049ca;
+}
+
+a {
+  color: var(--color-text);
+}
