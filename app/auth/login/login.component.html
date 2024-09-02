@@ -1,0 +1,67 @@
+<div class="login_panel">
+  <div class="top">
+    <!-- <div class="logo">
+      <img src="./../../../assets/images/logo.svg" alt="Kitz">
+    </div> -->
+    <h4>Hello!</h4>
+    <p>New user? <a href="#">Create an account</a></p>
+  </div>
+  <div class="btm">
+    <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+      <ul class="frm_con">
+
+        <!-- Form Errors -->
+        <li class="frm_itm" *ngIf="errorMessage != ''">
+          <nb-alert status="danger">{{ errorMessage }}</nb-alert>
+        </li>
+
+        <!-- Email Address -->
+        <li class="frm_itm">
+          <input
+            formControlName="usrEmail"
+            type="email"
+            nbInput
+            placeholder="Your email address"
+            fullWidth
+            fieldSize="large"
+          />
+          <span
+            class="fm_err"
+            *ngIf="
+              logInForm.controls['usrEmail'].invalid &&
+              (logInForm.controls['usrEmail'].dirty ||
+                logInForm.controls['usrEmail'].touched)
+            "
+            >Enter a valid email Address</span
+          >
+        </li>
+
+        <!-- Password -->
+        <li class="frm_itm">
+          <input
+            formControlName="usrPassword"
+            type="password"
+            nbInput
+            placeholder="Your password"
+            fullWidth
+            fieldSize="large"
+          />
+
+          <span
+            class="fm_err"
+            *ngIf="
+              logInForm.controls['usrPassword'].invalid &&
+              (logInForm.controls['usrPassword'].dirty ||
+                logInForm.controls['usrPassword'].touched)
+            "
+            >Enter your password</span
+          >
+          <div class="fgt_pss">
+            <a routerLink="/auth/forgot-password">I forgot my password</a>
+          </div>
+        </li>
+
+      </ul>
+    </form>
+  </div>
+</div>

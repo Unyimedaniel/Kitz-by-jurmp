@@ -1,0 +1,28 @@
+nb-layout {
+  --layout-background-color: rgb(255, 255, 255);
+}
+
+.auth_con {
+  display: flex;
+  min-height: 100vh;
+  background: url('./../../assets/images/rand-img/joel-filipe-asL4k-U3I_s-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .lft {
+    flex: 1;
+
+    .top {
+      padding: 34px 3vw;
+    }
+  }
+
+  .rgt {
+    display: flex;
+    height: 100vh;
+    // justify-content: center;
+    // align-items: center;
+    background: #ffffff;
+  }
+}
