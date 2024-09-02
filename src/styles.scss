@@ -1,0 +1,118 @@
+@use 'themes' as *;
+@use '@nebular/theme/styles/globals' as *;
+
+@include nb-install() {
+  @include nb-theme-global();
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #0057ff; //#0057ff;
+  --color-secondary: #080808; // #2b2a35
+  --color-text: var(--color-secondary);
+
+  --text-blue: #2f77eb;
+  --black-56: hsla(0,0%,8%,.56);
+  --black-24: hsla(0,0%,8%,.24);
+  --white-56: hsla(0,0%,100%,.56);
+  --white-24: hsla(0,0%,100%,.24);
+  --gray-50: hsla(0,0%,86%,.5);
+
+  --text-black: var(--color-text);
+  --text-black-02: hsla(0,0%,8%,.02);
+  --text-black-16: hsla(0,0%,8%,.16);
+  --text-black-32: hsla(0,0%,8%,.32);
+  --text-black-56: hsla(0,0%,8%,.56);
+  --text-gray-alpha: 56;
+  --text-gray: hsla(0,0%,8%,.56);
+  --text-light-gray-alpha: 32;
+  --text-light-gray: var(--text-black-32);
+  --text-white: #fff;
+  --text-dark-blue: #0049ca;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -ms-content-zooming: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins';
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--color-primary);
+  transition: all 0.5s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+
+  li {
+    list-style: none;
+
+    label {
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.03rem;
+    }
+  }
+}
+
+
+.btn_pri {
+  background: var(--color-primary);
+  color: var(--text-white);
+  @apply px-6 py-3 rounded-[3.125rem] font-semibold;
+
+  &:hover {
+    color: var(--text-white);
+  }
+}
+
+.btn_pri_outline {
+  background: none;
+  border: 0.0625rem solid var(--color-primary);
+  border-width: 0.0313rem;
+  color: var(--color-primary);
+  @apply px-6 py-3 rounded-[3.125rem] font-semibold;
+
+  &:hover {
+    opacity: 0.5;
+    color: var(--color-primary);
+  }
+}
