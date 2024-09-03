@@ -1,0 +1,124 @@
+
+
+// Base footer
+.bsr_ftr_con {
+    padding: 8vw 8vw 0vw 8vw;
+    min-height: 60vw;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 992px) {
+    }
+  
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    .top {
+        display: flex;
+        gap: 8vw;
+
+        @media screen and (max-width: 992px) {
+        }
+      
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 4vw;
+        }
+
+        .lft {
+            flex: 1.8;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 992px) {
+            }
+          
+            @media screen and (max-width: 600px) {
+            }
+
+            h3 {
+                font-size: 7.5rem;
+                line-height: 8.3125rem;
+                font-weight: 600;
+                letter-spacing: -0.375rem;
+                line-height: 7.0625rem;
+
+                @media screen and (max-width: 992px) {
+                }
+              
+                @media screen and (max-width: 600px) {
+                    font-size: 3.125rem;
+                    line-height: 3.25rem;
+                    letter-spacing: -0.2125rem;
+                }
+            }
+        }
+
+        .rgt {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2.1875rem;
+            justify-content: end;
+            align-items: flex-start;
+
+            @media screen and (max-width: 992px) {
+            }
+          
+            @media screen and (max-width: 600px) {
+                gap: 1.1875rem;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 1.8125rem;
+                font-weight: 400;
+
+                @media screen and (max-width: 992px) {
+                }
+              
+                @media screen and (max-width: 600px) {
+                    font-weight: 300;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+
+            .estim {
+                font-size: 1rem;
+                font-weight: 500;
+
+                @media screen and (max-width: 992px) {
+                }
+              
+                @media screen and (max-width: 600px) {
+                }
+
+                span {
+                    color: var(--color-primary);
+                    font-size: 0.875rem;
+                }
+            }
+
+            a {
+                @media screen and (max-width: 992px) {
+                }
+              
+                @media screen and (max-width: 600px) {
+                    margin-top: 0.875rem;
+                }
+            }
+        }
+    }
+
+    .btm {
+        flex: 1;
+
+        @media screen and (max-width: 992px) {
+        }
+      
+        @media screen and (max-width: 600px) {
+        }
+    }
+}

@@ -116,3 +116,25 @@ ul {
     color: var(--color-primary);
   }
 }
+
+
+a.see {
+  background: var(--color-primary);
+  color: var(--text-white);
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  padding: 0px 2rem;
+  border-radius: 2.5rem;
+  font-weight: 600;
+
+  @media screen and (max-width: 992px) {
+  }
+
+  @media screen and (max-width: 600px) {
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
