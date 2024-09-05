@@ -2,6 +2,8 @@
 .blu_hero_con {
     background: #0e0e0e;
     position: relative;
+
+    // display: none;
     
     @media screen and (max-width: 992px) {
     }
@@ -115,7 +117,7 @@
                 h3 {
                     font-size: 5.375rem;
                     line-height: 6rem;
-                    color: var(--text-white);
+                    color: #fffce1; // var(--text-white);
                     letter-spacing: -0.3125rem;
                     margin-top: 7vw;
 
@@ -123,8 +125,8 @@
                     }
                   
                     @media screen and (max-width: 600px) {
-                        font-size: 2.75rem;
-                        line-height: 3rem;
+                        font-size: 46px;
+                        line-height: 54px;
                         letter-spacing: -0.09rem;
                         font-weight: 600;
                         margin-top: 14vw;
@@ -166,6 +168,7 @@
                             }
                           
                             @media screen and (max-width: 600px) {
+                                display: none;
                             }
                         }
                     }
@@ -224,6 +227,73 @@
     }
 }
 
+
+// Build with Kitz
+.blu_build_con {
+    background: #0e100f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Ensure nothing spills out during animations */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Add transitions for smooth effects */
+
+    .bdg_con {
+        display: flex;
+        position: sticky;
+        z-index: 6;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        top: 20px; /* Add top value to manage stickiness */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+
+        .lb {
+            font-size: 92px;
+            font-weight: 700;
+            color: #fffce1;
+            letter-spacing: -0.21rem;
+        }
+    }
+
+    .brace {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        
+        .hlo {
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 80.04%);
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            z-index: 4;
+            height: 40vw;
+        }
+    }
+
+    .sts {
+        // background: pink;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+}  
+
+// .blu_build_con.scrolled {
+//     opacity: 0.4;
+//     transform: translate(750px) scale(1.8); /* Final state of animation */
+// }
+
+
+// .bdg_con.scrolled {
+//     opacity: 0; /* Fade out as it scrolls past */
+//     transform: translateY(-50px); /* Adjust movement as needed */
+// }
 
 
 // Base footer
