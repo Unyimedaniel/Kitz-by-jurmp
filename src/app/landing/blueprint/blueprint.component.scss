@@ -17,18 +17,17 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
-        height: 20vw;
+        height: 10vw;
         background: linear-gradient(180deg, rgba(0, 85, 255, 0) 0%, rgba(8, 0, 255, .7) 100%);
-        flex: none;
-        inset: 44vw 0 0;
+        // inset: 38vw 0 0;
         z-index: 1;
         mask: radial-gradient(50% 131% at 48.699999999999996% 31.8%, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .32556) 64%, rgba(0, 0, 0, 1) 100%) add;
-    
+
         @media screen and (max-width: 992px) {
         }
       
         @media screen and (max-width: 600px) {
-            display: none;
+            height: 24vw;
         }
     }
 
@@ -41,7 +40,7 @@
         height: 30vw;
         background: linear-gradient(180deg, rgba(0, 153, 255, 0) 0%, rgb(0, 178, 255) 100%);
         flex: none;
-        inset: 34vw 0 0;
+        inset: 28vw 0 0;
         mask: radial-gradient(73% 93% at 48.5% 40.300000000000004%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .3) 64%, rgba(0, 0, 0, 1) 100%) add;
         overflow: hidden;
         z-index: 2;
@@ -63,7 +62,7 @@
         background: radial-gradient(50% 32% at 50% 100%, #009dff 0%, rgba(0, 217, 255, .25) 53%, rgba(0, 119, 255, .15) 79%, rgba(0, 178, 255, 0) 100%);
         bottom: 0;
         flex: none;
-        height: 20vw;
+        height: 28vw;
 
         @media screen and (max-width: 992px) {
         }
@@ -75,7 +74,7 @@
     .hro {
         display: flex;
         flex-direction: column;
-        min-height: 64vw;
+        min-height: 58vw;
 
         @media screen and (max-width: 992px) {
         }
@@ -230,7 +229,7 @@
 
 // Build with Kitz
 .blu_build_con {
-    background: #0e100f;
+    background: red; // #0e100f;
     display: flex;
     align-items: center;
     justify-content: center;
