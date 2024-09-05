@@ -1,7 +1,7 @@
 footer {
   .ftr_con {
     background: white;
-    padding: 5.625rem 3.9vw 4.625rem 3.9vw;
+    padding: 5.625rem 4vw 4.625rem 4vw;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -47,11 +47,8 @@ footer {
         }
 
         .logo {
-
-          @media screen and (max-width: 992px) {
-          }
-
-          @media screen and (max-width: 600px) {
+          img {
+            width: 2.5rem;
           }
         }
 
@@ -280,4 +277,199 @@ footer {
       }
     }
   }
+
+  .ftr_con_dark {
+    background: #0e0e0e;
+    
+    .top {
+      border-top: 0.0625rem solid rgba(146, 146, 146, 0.3019607843);
+      border-bottom: 0.0625rem solid rgba(146, 146, 146, 0.3019607843);
+      border-width: 0.0313rem;
+  
+      .lft {
+        .logo {
+          img  {
+            opacity: 0.9;
+          }
+        }
+  
+        p {
+          color: #7f7f7f;
+        }
+  
+        a.see {
+          background: var(--color-primary);
+          color: var(--text-white);
+          display: inline-flex;
+          height: 3rem;
+          align-items: center;
+          padding: 0px 2rem;
+          border-radius: 2.5rem;
+          font-weight: 600;
+  
+          @media screen and (max-width: 992px) {
+          }
+  
+          @media screen and (max-width: 600px) {
+          }
+  
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+  
+        > ul {
+          display: flex;
+          gap: 1.125rem;
+          margin-top: 0.5rem;
+  
+          @media screen and (max-width: 992px) {
+          }
+  
+          @media screen and (max-width: 600px) {
+          }
+  
+          li {
+            @media screen and (max-width: 992px) {
+            }
+  
+            @media screen and (max-width: 600px) {
+            }
+  
+            a {
+              color: #7f7f7f;
+  
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+  
+      .rgt {
+        display: flex;
+        flex: 1;
+        gap: 6rem;
+  
+        @media screen and (max-width: 992px) {
+        }
+  
+        @media screen and (max-width: 600px) {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+        }
+  
+        ul.col_lim {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          transition: all 0.5s ease;
+  
+          @media screen and (max-width: 992px) {
+          }
+  
+          @media screen and (max-width: 600px) {
+            height: 2.125rem;
+            overflow: hidden;
+            gap: 0.78rem;
+  
+            &:hover {
+              height: unset;
+              overflow: unset;
+              margin-bottom: 1.875rem;
+  
+              li.hdr {
+                transition: all 0.5s ease;
+  
+                span.icn {
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+  
+  
+          li {  
+            a {
+              color: #7f7f7f;
+  
+              &:hover {
+                color: var(--text-white);
+
+                &:after {
+                  background: var(--text-white);
+                }
+              }
+            }
+          }
+  
+          .hdr {
+            color: var(--text-white);
+            font-weight: 500;
+            letter-spacing: 0.01rem;
+            font-size: 0.875rem;
+            
+            @media screen and (max-width: 600px) {
+              align-items: center;
+              justify-content: space-between;
+              padding-bottom: 0.9375rem;
+              border-bottom: 0.0625rem solid #f1f1f1;
+              display: flex;
+              border-width: 0.0313rem;
+            }
+  
+            span.icn {
+              display: none;
+  
+              @media screen and (max-width: 992px) {
+              }
+  
+              @media screen and (max-width: 600px) {
+                display: flex;
+                transition: all 0.5s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .btm {
+      @media screen and (max-width: 992px) {
+      }
+  
+      @media screen and (max-width: 600px) {
+      }
+  
+      h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-bottom: 0.875rem;
+  
+        @media screen and (max-width: 992px) {
+        }
+  
+        @media screen and (max-width: 600px) {
+        }
+      }
+  
+      p {
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.25rem;
+        line-height: 1.5rem;
+  
+        @media screen and (max-width: 992px) {
+        }
+  
+        @media screen and (max-width: 600px) {
+        }
+      }
+    }
+  }
 }
+
+
+

@@ -1,10 +1,10 @@
-<div class="lnd_main_con">
+<div class="lnd_main_con" [ngClass]="{'lnd_main_con_dark': dark}">
   <div class="nv_br">
     <div class="lft">
       <div class="lgo">
         <a href="#">
-          <img src="./../../../../../assets/images/logo.svg" alt="Kitz">
-          <!-- <small>by Jurmp</small> -->
+          <img [src]="dark ? logoWhite : logo" alt="Kitz">
+          <small>by Jurmp</small>
         </a>
       </div>
 
@@ -29,7 +29,7 @@
         </ul>
         <ul class="mnu_b">
           <li><a href="#">Build It</a></li>
-          <li><a href="#">For Business</a></li>
+          <li><a href="/blueprint">Blueprint</a></li>
         </ul>
       </ul>
     </div>
@@ -41,7 +41,7 @@
         </li>
 
         <li>
-          <a href="demo" class="btn_pri_outline">Book a call</a>
+          <a href="demo" class="btn_pri_outline book">Book a call</a>
         </li>
       </ul>
     </div>

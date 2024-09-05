@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-landing-header',
@@ -9,9 +9,15 @@ import { Component } from '@angular/core';
 export class LandingHeaderComponent {
 
   public drpStatus: boolean;
+  public logo: string;
+  public logoWhite: string;
+
+  @Input() dark: boolean = false;
 
   constructor() {
     this.drpStatus = false;
+    this.logo = './../../../../../assets/images/logo.svg';
+    this.logoWhite = './../../../../../assets/images/logo-white.svg';
   }
 
   openMenu() {

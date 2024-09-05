@@ -12,8 +12,13 @@ const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   { path: 'login', redirectTo: 'auth', pathMatch: 'full' },
   { path: 'm', loadChildren: () => import('./mobile/mobile.module').then(m => m.MobileModule) },
+
+  // Legacy Routes
+  { path: 'blueprint', loadChildren: () => import('./landing/blueprint/blueprint.module').then(m => m.BlueprintModule) },
+
   { path: '', title: 'Kitz by Jurmp - Unlimited Design Service', loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule) },
   { path: '**', component: NotFoundComponent },
+
 ];
 
 @NgModule({

@@ -1,3 +1,229 @@
+// Hero
+.blu_hero_con {
+    background: #0e0e0e;
+    position: relative;
+    
+    @media screen and (max-width: 992px) {
+    }
+  
+    @media screen and (max-width: 600px) {
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 20vw;
+        background: linear-gradient(180deg, rgba(0, 85, 255, 0) 0%, rgba(8, 0, 255, .7) 100%);
+        flex: none;
+        inset: 44vw 0 0;
+        z-index: 1;
+        mask: radial-gradient(50% 131% at 48.699999999999996% 31.8%, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .32556) 64%, rgba(0, 0, 0, 1) 100%) add;
+    
+        @media screen and (max-width: 992px) {
+        }
+      
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 30vw;
+        background: linear-gradient(180deg, rgba(0, 153, 255, 0) 0%, rgb(0, 178, 255) 100%);
+        flex: none;
+        inset: 34vw 0 0;
+        mask: radial-gradient(73% 93% at 48.5% 40.300000000000004%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .3) 64%, rgba(0, 0, 0, 1) 100%) add;
+        overflow: hidden;
+        z-index: 2;
+
+        @media screen and (max-width: 992px) {
+        }
+      
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    .glw {
+        position: absolute;
+        overflow: hidden;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        background: radial-gradient(50% 32% at 50% 100%, #009dff 0%, rgba(0, 217, 255, .25) 53%, rgba(0, 119, 255, .15) 79%, rgba(0, 178, 255, 0) 100%);
+        bottom: 0;
+        flex: none;
+        height: 20vw;
+
+        @media screen and (max-width: 992px) {
+        }
+      
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    .hro {
+        display: flex;
+        flex-direction: column;
+        min-height: 64vw;
+
+        @media screen and (max-width: 992px) {
+        }
+      
+        @media screen and (max-width: 600px) {
+            min-height: 100vh;
+        }
+
+        .top {
+            padding: 7vw 6.4vw;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 30;
+
+            @media screen and (max-width: 992px) {
+            }
+          
+            @media screen and (max-width: 600px) {
+                padding: 20vw 6.4vw;
+            }
+
+            .lft {
+                flex: 1;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: flex-start;
+
+                @media screen and (max-width: 992px) {
+                }
+              
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                }
+    
+                h3 {
+                    font-size: 5.375rem;
+                    line-height: 6rem;
+                    color: var(--text-white);
+                    letter-spacing: -0.3125rem;
+                    margin-top: 7vw;
+
+                    @media screen and (max-width: 992px) {
+                    }
+                  
+                    @media screen and (max-width: 600px) {
+                        font-size: 2.75rem;
+                        line-height: 3.125rem;
+                        letter-spacing: -0.09rem;
+                        font-weight: 600;
+                        margin-top: 14vw;
+                    }
+
+                    > span.price {
+                        color: var(--color-primary);
+                        font-weight: 600;
+
+                        @media screen and (max-width: 992px) {
+                        }
+                      
+                        @media screen and (max-width: 600px) {
+                        }
+                    }
+
+                    .drt {
+                        font-weight: 600;
+                        position: relative;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 0.0313rem;
+
+                        @media screen and (max-width: 992px) {
+                        }
+                      
+                        @media screen and (max-width: 600px) {
+                        }
+
+                        &::after {
+                            content: '';
+                            background: var(--color-primary);
+                            height: 0.1375rem;
+                            position: absolute;
+                            left: 0rem;
+                            right: -0.5625rem;
+                            bottom: 1rem;
+
+                            @media screen and (max-width: 992px) {
+                            }
+                          
+                            @media screen and (max-width: 600px) {
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    color: var(--white-56);
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                    padding-right: 40%;
+                    margin-bottom: 1.75rem;
+
+                    @media screen and (max-width: 992px) {
+                    }
+                  
+                    @media screen and (max-width: 600px) {
+                        padding-right: unset;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 300;
+                    }
+                }
+                
+                a {
+                    color: var(--text-white);
+                    padding: 1.125rem 1.75rem;
+                    gap: 10px;
+
+                    @media screen and (max-width: 992px) {
+                    }
+                  
+                    @media screen and (max-width: 600px) {
+                    }
+
+                    span {
+                        svg {
+                            width: 20px;
+
+                            @media screen and (max-width: 992px) {
+                            }
+                          
+                            @media screen and (max-width: 600px) {
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .rgt {
+            }
+        }
+
+        .btm {
+        }
+    }
+}
+
 
 
 // Base footer
@@ -6,6 +232,8 @@
     min-height: 60vw;
     display: flex;
     flex-direction: column;
+    background: #0e0e0e;
+    display: none;
 
     @media screen and (max-width: 992px) {
     }
@@ -38,11 +266,12 @@
             }
 
             h3 {
-                font-size: 7.5rem;
+                font-size: 6.25rem;
                 line-height: 8.3125rem;
-                font-weight: 600;
+                font-weight: 500;
                 letter-spacing: -0.375rem;
-                line-height: 7.0625rem;
+                line-height: 6.0625rem;
+                color: var(--text-white);
 
                 @media screen and (max-width: 992px) {
                 }
@@ -74,6 +303,7 @@
                 font-size: 1.125rem;
                 line-height: 1.8125rem;
                 font-weight: 400;
+                color: var(--white-56);
 
                 @media screen and (max-width: 992px) {
                 }
@@ -87,6 +317,7 @@
             .estim {
                 font-size: 1rem;
                 font-weight: 600;
+                color: var(--text-white);
 
                 @media screen and (max-width: 992px) {
                 }
@@ -106,6 +337,7 @@
               
                 @media screen and (max-width: 600px) {
                     margin-top: 0.875rem;
+                    font-size: 0.875rem;
                 }
             }
         }

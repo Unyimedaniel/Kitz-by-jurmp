@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BlueprintRoutingModule } from './blueprint-routing.module';
 import { BlueprintComponent } from './blueprint.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BlueprintComponent } from './blueprint.component';
   ],
   imports: [
     CommonModule,
-    BlueprintRoutingModule
+    BlueprintRoutingModule,
+    SharedModule
   ]
 })
 export class BlueprintModule { }

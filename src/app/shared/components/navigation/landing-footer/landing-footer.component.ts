@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-landing-footer',
@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class LandingFooterComponent {
+
   public logo: string;
+  public logoWhite: string;
+
+  @Input() dark: boolean = false;
 
   constructor() {
     this.logo = './../../../../../assets/images/logo.svg';
+    this.logoWhite = './../../../../../assets/images/logo-white.svg';
   }
 }

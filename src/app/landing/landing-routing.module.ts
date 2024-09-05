@@ -14,8 +14,7 @@ const routes: Routes = [
       { path: 'book-call', loadChildren: () => import('./book/book.module').then(m => m.BookModule) },
       { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
       { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
-      { path: 'blueprint', loadChildren: () => import('./blueprint/blueprint.module').then(m => m.BlueprintModule) },
-      { path: '', redirectTo: 'blueprint', pathMatch: 'full' },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]
   },

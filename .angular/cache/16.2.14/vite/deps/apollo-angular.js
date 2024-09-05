@@ -2,7 +2,7 @@ import {
   ApolloClient,
   NetworkStatus,
   gql
-} from "./chunk-SGKUQM2X.js";
+} from "./chunk-R34WU7FW.js";
 import {
   Inject,
   Injectable,
@@ -22,8 +22,8 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-RX4WFQK6.js";
-import "./chunk-E2J3BYMH.js";
+} from "./chunk-N5GEXGLV.js";
+import "./chunk-AOF462FV.js";
 import {
   __spreadProps,
   __spreadValues
