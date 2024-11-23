@@ -35,7 +35,6 @@
               }
             ],
             "styles": [
-              "node_modules/@nebular/theme/styles/prebuilt/default.css",
               "src/styles.scss",
               {
                 "input": "node_modules/@ionic/angular/css/core.css"
