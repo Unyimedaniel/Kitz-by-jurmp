@@ -11,7 +11,7 @@ export class AuthComponent {
   public logo: string;
 
   constructor() {
-    this.logo = "./../../assets/images/logo-white.svg";
+    this.logo = "./../../assets/images/logo.svg";
   }
 
 }

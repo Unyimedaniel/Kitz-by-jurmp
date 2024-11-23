@@ -2,14 +2,14 @@
 @use '@nebular/theme/styles/theming' as *;
 @use '@nebular/theme/styles/themes/default';
 
-// $nb-enable-css-custom-properties: true;
+$nb-enable-css-custom-properties: true;
 
 $nb-themes: nb-register-theme(
   (
     font-family-primary: "Poppins",
 
     // new primary color
-    color-primary-100: red, //#faf7ff,
+    color-primary-100: #faf7ff,
     color-primary-200: #ece3ff,
     color-primary-300: #d5bfff,
     color-primary-400: #b18aff,

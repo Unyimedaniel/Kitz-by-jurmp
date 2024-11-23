@@ -1,28 +1,219 @@
-nb-layout {
-  --layout-background-color: rgb(255, 255, 255);
-}
+// "node_modules/@nebular/theme/styles/prebuilt/default.css",
 
 .auth_con {
   display: flex;
   min-height: 100vh;
-  background: url('./../../assets/images/rand-img/joel-filipe-asL4k-U3I_s-unsplash.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  @media screen and (max-width: 992px) {
+  }
+
+  @media screen and (max-width: 600px) {
+  }
 
   .lft {
     flex: 1;
+    display: flex;
+    background: var(--text-white);
+    flex-direction: column;
 
-    .top {
-      padding: 34px 3vw;
+    @media screen and (max-width: 992px) {
+    }
+
+    @media screen and (max-width: 600px) {
+    }
+
+    nb-layout {
+      --layout-background-color: var(--color-grey-001); 
+
+      nb-layout-column {
+        padding: 0px;
+        background: #fff;
+      }
     }
   }
 
   .rgt {
+    flex: 1;
     display: flex;
-    height: 100vh;
-    // justify-content: center;
-    // align-items: center;
-    background: #ffffff;
+    background: var(--color-grey-001);
+
+    @media screen and (max-width: 992px) {
+    }
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+.auth_cp {  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 992px) {
+  }
+
+  @media screen and (max-width: 600px) {
+  }
+
+  .nav {
+    height: 4.375rem;
+    width: 100%;
+    padding: 0rem 4vw;
+    display: flex;
+    align-items: center;
+
+    a {
+      gap: 6px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      img {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  .btm {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+
+    @media screen and (max-width: 992px) {
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    img {
+      width: 3.625rem;
+    }
+
+    h3 {
+      letter-spacing: -0.03rem;
+      font-size: 1.25rem;
+      margin: 0px;
+      font-weight: 600;
+      font-family: 'Poppins';
+    }
+
+    .opt_piker {
+      width: 100%;
+
+      > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+
+        .btw {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          &:after {
+            content: "";
+            height: 0.0313rem;
+            position: absolute;
+            left: 2.5rem;
+            right: 2.5rem;
+            background: #e0e0e0;
+          }
+
+          span {
+            background: #ffffff;
+            padding: 0px 0.625rem;
+            position: absolute;
+            z-index: 9;
+            font-size: 0.875rem;
+            color: #222b46a1;
+          }
+        }
+
+
+        li {
+          flex: 1;
+          display: flex;
+          
+          button {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            height: 50px;
+            gap: 8px;
+            font-size: 14px;
+            border-radius: 40px;
+            font-weight: 500;
+          }
+
+          .google {
+            background: none;
+            border: 1px solid #dddddd;
+            border-width: 0.5px;
+
+            &:hover {
+              background: #f9f9f9;
+            }
+            
+            .icn {
+              svg {
+                width: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.auth_frm_con {
+  form {
+    .frm_con {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .frm_itm {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        
+        input {
+          border-radius: 40px;
+          background: #f0f0f0;
+          border: none;
+          padding-left: 26px;
+
+          // --input-border-style: solid;
+          // --input-border-width: 0.5px;
+          // --input-outline-color: red;
+          // --input-outline-width: 2px;
+        }
+
+        .fm_err {
+          font-size: 12px;
+          padding-left: 27px;
+          color: #ff1414;
+        }
+      }
+
+      .fgt_pss {
+        font-size: 0.875rem;
+      }
+    }  
   }
 }

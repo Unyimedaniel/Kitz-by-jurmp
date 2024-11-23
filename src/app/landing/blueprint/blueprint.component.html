@@ -32,14 +32,125 @@
 
 <!-- Built with Kitz -->
 <div class="blu_build_con" [class.scrolled]="isScrolled">
-    <div class="bdg_con" [class.scrolled]="isBdgScrolled">
-        <div class="lb">Blueprintz</div>    
+    <div #box class="bdg_con" [class.scrolled]="isBdgScrolled" (click)="animateBox()">
+        <div class="lb">
+            <span class="icn">
+                <svg width="157" height="220" viewBox="0 0 157 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.941 0C50.7495 0 69.1869 20.8393 66.2858 44.4704L56.6641 122.846H59.7389C62.2768 122.846 64.3267 122.455 65.8885 121.674C67.4503 120.893 69.0121 119.478 70.5739 117.428C80.744 103.551 92.198 77.3842 108.057 69.1098C110.302 67.9385 116.257 67.3528 116.257 67.3528H156.961L114.5 121.381C112.547 123.919 110.4 126.164 108.057 128.117C105.714 130.069 103.274 131.777 100.736 133.241C102.786 134.901 104.543 136.853 106.007 139.098C107.569 141.246 108.936 143.735 110.107 146.566L140.562 219.189H101.029C81.8016 219.189 72.6188 172.007 67.0598 157.84C65.9861 155.399 64.8147 153.838 63.5458 153.154C62.3744 152.373 60.4222 151.983 57.689 151.983H53.0036L50.2302 174.715C47.1327 200.104 25.5769 219.189 -0.00012207 219.189V219.189L26.941 0V0Z" fill="white"/>
+                </svg>                    
+            </span>
+            <span class="txt">Blueprint</span>
+        </div>    
     </div>
     <div class="brace">
         <div class="hlo"></div>
     </div>
-    <div class="sts"></div>
+    <div class="sts">
+        <ul class="bar a">
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+        </ul>
+        <ul class="bar b">
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+        </ul>
+        <ul class="bar c">
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+        </ul>
+        <ul class="bar d">
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+        </ul>
+        <ul class="bar e">
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+        </ul>
+        <ul class="bar f">
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+            <li class="tile">
+                <div class="img_r"></div>
+            </li>
+        </ul>
+    </div>
 </div>
+
+
+<!-- FAQ -->
+<div class="faq_con">
+    <div class="top">
+      <h3>Frequently Asked Questions</h3>
+    </div>
+    <div class="btm">
+      <!-- Accordion Items -->
+      <div class="accordion-item">
+        <input type="radio" id="question1" name="accordion" class="accordion-toggle">
+        <label for="question1" class="accordion-label">What is your return policy?</label>
+        <div class="accordion-content">
+          <p>Our return policy allows you to return items within 30 days of purchase.</p>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <input type="radio" id="question2" name="accordion" class="accordion-toggle">
+        <label for="question2" class="accordion-label">Do you offer international shipping?</label>
+        <div class="accordion-content">
+          <p>Yes, we offer international shipping to selected countries. Additional fees may apply.</p>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <input type="radio" id="question3" name="accordion" class="accordion-toggle">
+        <label for="question3" class="accordion-label">How can I track my order?</label>
+        <div class="accordion-content">
+          <p>You can track your order using the tracking number provided in your order confirmation email.</p>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  
+
 
 <!-- Base Footer -->
 <div class="bsr_ftr_con">

@@ -1,12 +1,15 @@
 export const environment = {
+  app: {
+    name: 'Kitz',
+  },
   firebase: {
-    projectId: 'kitz-app-gcp',
-    appId: '1:305864784774:web:d95d5c6b2c64600f180a07',
-    storageBucket: 'kitz-app-gcp.appspot.com',
-    apiKey: 'AIzaSyB07WqKGrubqVLTSjMhMViJeVIq_uMIJLI',
-    authDomain: 'kitz-app-gcp.firebaseapp.com',
-    messagingSenderId: '305864784774',
-    measurementId: 'G-41Y4PMFFWH',
+    apiKey: "AIzaSyCW79Q3lUXhq2ZsTPQ2yU7667I9FhgE0MY",
+    authDomain: "kitz-fire-39850.firebaseapp.com",
+    projectId: "kitz-fire-39850",
+    storageBucket: "kitz-fire-39850.firebasestorage.app",
+    messagingSenderId: "373307663999",
+    appId: "1:373307663999:web:f084eec7db8ca46fa6814a",
+    measurementId: "G-33Q3S00GKR"
   },
   graphql: {
     uri: 'http://localhost:3000/graphql'

@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   public showPassword: boolean;
   public loading: boolean;
   public pswText: string;
-
+  public logo: string = "./../../assets/images/logo.svg";
 
   //
   constructor(
@@ -41,7 +41,6 @@ export class LoginComponent implements OnInit {
       usrEmail: ['', [Validators.required, Validators.email]],
       usrPassword: ['', [Validators.required, Validators.minLength(6)]]
     });
-
   }
 
 

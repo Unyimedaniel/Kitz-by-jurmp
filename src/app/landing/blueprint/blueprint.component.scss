@@ -3,7 +3,7 @@
     background: #0e0e0e;
     position: relative;
 
-    // display: none;
+    display: none;
     
     @media screen and (max-width: 992px) {
     }
@@ -37,10 +37,10 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
-        height: 30vw;
+        height: 20vw;
         background: linear-gradient(180deg, rgba(0, 153, 255, 0) 0%, rgb(0, 178, 255) 100%);
         flex: none;
-        inset: 28vw 0 0;
+        inset: 38vw 0 0;
         mask: radial-gradient(73% 93% at 48.5% 40.300000000000004%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .3) 64%, rgba(0, 0, 0, 1) 100%) add;
         overflow: hidden;
         z-index: 2;
@@ -116,7 +116,7 @@
                 h3 {
                     font-size: 5.375rem;
                     line-height: 6rem;
-                    color: #fffce1; // var(--text-white);
+                    color: var(--text-white);
                     letter-spacing: -0.3125rem;
                     margin-top: 7vw;
 
@@ -239,21 +239,69 @@
     overflow: hidden; /* Ensure nothing spills out during animations */
     transition: opacity 0.4s ease, transform 0.4s ease; /* Add transitions for smooth effects */
 
+    // display: none;
+
     .bdg_con {
         display: flex;
         position: sticky;
         z-index: 6;
         width: 90vw;
+        // height: 40%;
         align-items: center;
         justify-content: center;
         top: 20px; /* Add top value to manage stickiness */
         transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        
+
+        // display: none;
 
         .lb {
-            font-size: 92px;
-            font-weight: 700;
-            color: #fffce1;
-            letter-spacing: -0.21rem;
+            background: #ffffff;
+            padding: 1.125rem 3.75rem 1.125rem 1.375rem;
+            border-radius: 5rem;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 
+            0px 0px 4px 0px rgba(0, 0, 0, 0.06), 
+            0px 4px 4px 0px rgba(0, 0, 0, 0.08), 
+            0px 30px 100px 0px #000;
+            
+            &:hover {
+                background: var(--color-primary);
+                color: var(--text-white);
+                cursor: pointer;
+
+                span.icn {
+                    background: var(--color-primary);
+                }
+
+                span.txt {
+                    color: var(--text-white);
+                }
+            }
+
+            span.icn {
+                background: var(--color-primary);
+                display: flex;
+                height: 118px;
+                width: 118px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 80px;
+
+                svg {
+                    width: 50%;
+                    padding-left: 8px;
+                }
+            }
+
+            span.txt {
+                font-size: 76px;
+                font-weight: 600;
+                letter-spacing: -0.3rem;
+                color: #0e100f;
+            }
         }
     }
 
@@ -277,22 +325,199 @@
         // background: pink;
         position: absolute;
         z-index: 1;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.625rem;
+        top: 0px;
+        z-index: 1;
+        flex-wrap: nowrap;
+
+        ul.bar {
+            // background: pink;
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            height: 100vw;
+            justify-content: flex-start;
+            overflow: visible;
+            position: relative;
+            width: 33vw;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+
+            li.tile {
+                .img_r {
+                    height: 30vw;
+                    border-radius: 10px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        top: 0px;
+                        bottom: 0px;
+                        width: 100%;
+                        background: rgb(23 23 23);
+                        border-radius: 10px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        &:after { 
+                            background: rgba(23, 23, 23, 0.086);
+                        }
+                    }
+                }
+            }
+        }
+
+        ul.b {
+            // background: greenyellow;
+            width: 44vw;
+            margin-bottom: 20vw;
+        }
+
+        ul.c {
+            // background: yellow;
+            width: 66vw;
+        }
+
+        ul.d {
+            // background: yellow;
+            width: 66vw;
+            margin-bottom: 10vw;
+        }
+
+        ul.e {
+            // background: greenyellow;
+            width: 44vw;
+            margin-bottom: 24vw;
+        }
     }
 
 }  
 
-// .blu_build_con.scrolled {
-//     opacity: 0.4;
-//     transform: translate(750px) scale(1.8); /* Final state of animation */
-// }
 
+// FAQ
+.faq_con {
+    background: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    padding: 6vw 4vw;
+    gap: 74px;
 
-// .bdg_con.scrolled {
-//     opacity: 0; /* Fade out as it scrolls past */
-//     transform: translateY(-50px); /* Adjust movement as needed */
-// }
+    .top {
+        h3 {
+            color: var(--text-white);
+            font-size: 5rem;
+            width: 50%;
+            font-weight: 600;
+            letter-spacing: -0.23rem;
+            line-height: 5.625rem;
+        }
+    }
+
+    .btm {
+        // margin: 0px 6vw;
+
+        /* Basic FAQ container styles */
+        .faq_con {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            // background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .top h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        /* Accordion item styles */
+        .accordion-item {
+            border-bottom: 1px solid #dddddd69;
+            border-width: 0.5px;
+        }
+        
+        /* Hide the default radio button */
+        .accordion-toggle {
+            display: none;
+        }
+        
+        /* Styling for the question label */
+        .accordion-label {
+            display: block;
+            padding: 30px 0px;
+            cursor: pointer;
+            color: var(--text-white);
+            transition: background-color 0.3s ease;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: -0.03rem;
+            position: relative;
+            
+            &:after {
+                content: '';
+                height: 100%;
+                width: 100px;
+                display: flex;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                content: "+";
+                font-size: 2.75rem;
+                color: #fff;
+                transition: transform 0.3s ease;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        
+        /* Styling for the answer content */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0px;
+        }
+        
+        /* Reveal the content when the radio button is checked */
+        .accordion-toggle:checked + .accordion-label + .accordion-content {
+            max-height: 12.5rem; /* Adjust as needed */
+            padding: 0.9375rem 0rem 3.75rem 0rem;
+            color: var(--white-56);
+            font-size: 1.125rem;
+            font-weight: 300;
+        }
+
+        /* Change + to - when expanded */
+        .accordion-toggle:checked + .accordion-label::after {
+            content: "-";
+            // transform: rotate(180deg);
+        }
+        
+        
+        
+        /* Content paragraph styling */
+        .accordion-content p {
+            margin: 0;
+            font-size: 1.125rem;
+            color: var(--white-56);
+        }
+    }
+}
 
 
 // Base footer
@@ -422,3 +647,7 @@
         }
     }
 }
+
+
+
+

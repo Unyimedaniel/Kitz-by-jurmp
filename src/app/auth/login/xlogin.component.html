@@ -1,0 +1,223 @@
+<div class="login_panel">
+  <div class="top">
+    <!-- <div class="logo">
+      <img src="./../../../assets/images/logo.svg" alt="Kitz">
+    </div> -->
+    <h4>Hello!</h4>
+    <p>New user? <a href="#">Create an account</a></p>
+  </div>
+  <div class="btm">
+    <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+      <ul class="frm_con">
+
+        <!-- Form Errors -->
+        <li class="frm_itm" *ngIf="errorMessage != ''">
+          <nb-alert status="danger">{{ errorMessage }}</nb-alert>
+        </li>
+
+        <!-- Email Address -->
+        <li class="frm_itm">
+          <input
+            formControlName="usrEmail"
+            type="email"
+            nbInput
+            placeholder="Your email address"
+            fullWidth
+            fieldSize="large"
+          />
+          <span
+            class="fm_err"
+            *ngIf="
+              logInForm.controls['usrEmail'].invalid &&
+              (logInForm.controls['usrEmail'].dirty ||
+                logInForm.controls['usrEmail'].touched)
+            "
+            >Enter a valid email Address</span
+          >
+        </li>
+
+        <!-- Password -->
+        <li class="frm_itm">
+          <input
+            formControlName="usrPassword"
+            type="password"
+            nbInput
+            placeholder="Your password"
+            fullWidth
+            fieldSize="large"
+          />
+
+          <span
+            class="fm_err"
+            *ngIf="
+              logInForm.controls['usrPassword'].invalid &&
+              (logInForm.controls['usrPassword'].dirty ||
+                logInForm.controls['usrPassword'].touched)
+            "
+            >Enter your password</span
+          >
+          <div class="fgt_pss">
+            <a routerLink="/auth/forgot-password">I forgot my password</a>
+          </div>
+        </li>
+
+      </ul>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!--
+  Photo by <a href="https://unsplash.com/@rgaleriacom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/photos/5YM26lUicfU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@joelfilip?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joel Filipe</a> on <a href="https://unsplash.com/photos/asL4k-U3I_s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@rgaleriacom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/photos/yte5_7phEjw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+-->
+
+
+
+.auth_con {
+  display: flex;
+  min-height: 100vh;
+
+  .lft {
+    flex: 1;
+    display: flex;
+    background: var(--text-white);
+    flex-direction: column;
+
+    .top {
+      height: 4.375rem;
+      padding: 0rem 4vw;
+      display: flex;
+      align-items: center;
+
+      .lgo {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          img {
+            width: 2.5rem;
+          }
+
+          small {
+            font-weight: 300;
+            padding-top: 5px;
+
+            @media screen and (max-width: 992px) {
+            }
+
+            @media screen and (max-width: 600px) {
+            }
+          }
+        }
+      }
+    }
+
+    .btm {
+      width: 45%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.375rem;
+
+      img {
+        width: 3.625rem;
+      }
+
+      h3 {
+        letter-spacing: -0.03rem;
+        font-size: 1.25rem;
+        margin: 0px;
+        font-weight: 600;
+      }
+
+      .opt_piker {
+        width: 100%;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.875rem;
+
+          .btw {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &:after {
+              content: "";
+              height: 0.0313rem;
+              position: absolute;
+              left: 2.5rem;
+              right: 2.5rem;
+              background: #e0e0e0;
+            }
+
+            span {
+              background: #ffffff;
+              padding: 0px 0.625rem;
+              position: absolute;
+              z-index: 9;
+              font-size: 0.875rem;
+              color: #525252;
+            }
+          }
+
+
+          li {
+            flex: 1;
+            display: flex;
+            
+            button {
+              display: flex;
+              width: 100%;
+              align-items: center;
+              justify-content: center;
+              padding-left: 0px;
+              padding-right: 0px;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              height: 50px;
+              gap: 8px;
+              font-size: 14px;
+              border-radius: 40px;
+              font-weight: 500;
+            }
+
+            .google {
+              background: none;
+              border: 1px solid #dddddd;
+              border-width: 0.5px;
+
+              &:hover {
+                background: #f9f9f9;
+              }
+              
+              .icn {
+                svg {
+                  width: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rgt {
+    flex: 1;
+    display: flex;
+    background: var(--color-grey-001);
+  }
+}

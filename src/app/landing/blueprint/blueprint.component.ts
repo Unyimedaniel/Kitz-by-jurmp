@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-blueprint',
@@ -10,7 +11,12 @@ export class BlueprintComponent implements OnInit {
   isScrolled = false;
   isBdgScrolled = false;
 
+  constructor() {
+    // console.log(gsap);
+  }
+
   @HostListener('window:scroll', [])
+  @ViewChild('box', { static: true }) box!: ElementRef;
 
   onWindowScroll() {
     const buildCon = document.querySelector('.blu_build_con');
@@ -19,6 +25,8 @@ export class BlueprintComponent implements OnInit {
     if (buildCon) {
       const buildConRect = buildCon.getBoundingClientRect();
       const windowHeight = window.innerHeight;
+
+      this.animateBox();
 
       // Check if .blu_build_con is in view
       this.isScrolled = buildConRect.top < windowHeight && buildConRect.bottom > 0;
@@ -29,6 +37,17 @@ export class BlueprintComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.animateBox();
+  }
+
+  animateBox() {
+    // Basic GSAP animation
+    gsap.fromTo(
+      this.box.nativeElement,
+      { opacity: 0, x: -100 }, // Starting state
+      { opacity: 1, x: 0, duration: 1.5, ease: 'power2.out' } // Ending state
+    );
+  }
 
 }
