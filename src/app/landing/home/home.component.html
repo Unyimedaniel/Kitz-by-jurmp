@@ -1,0 +1,55 @@
+<div class="k_col">
+
+  
+
+
+  <!-- Hero -->
+  <div class="k_row">
+    <div class="hr_hero_b">
+      <h1 class="text-[4.875rem] leading-[5rem] tracking-[-0.03em] text-center font-semibold w-[60vw] sm:text-[40px] sm:leading-normal sm:tracking-normal sm:text-left sm:w-auto md:text-[48px]">
+        Discover real-world design inspiration.
+      </h1>      
+      <p>Featuring over 300,000 screens and 1,000 iOS, Android & Web apps — New content weekly.</p>
+      <ul>
+        <li><a href="#" class="btn_pri getstarted">Get started</a></li>
+        <li><a href="#" class="btn_pri_outline pricing">See our plans</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Customer Reel -->
+  <div class="k_row">
+    <div class="cst_rl_con">
+      <div class="top">
+        <p class="text-sm">Trusted by design teams at</p>
+      </div>
+      <app-brands-ticker class="w-[80vw] my-9 lg:my-10"></app-brands-ticker>
+    </div>
+  </div>
+
+
+  <!--  -->
+  <div class="k_row">
+    <div class="hr_main">
+      <div class="top">
+        <div class="cursor_a"></div>
+        <a href="#" class="sale_call">
+          <span>✨ <b>Blueprint</b> is here! For a limited time, get <small>40%</small> off your first project ✨</span>
+        </a>
+        <h2><span>Creative Design</span> <br> done right</h2>
+    
+        <div class="fcc_pl">
+          <img src="./../../../assets/images/facepile.svg" alt="Faces">
+        </div>
+        <p>Add the best creatives in the world to your team, no hiring required. Our vetted designers are ready to level up your brand.</p>
+        <ul>
+          <li><a class="start" href="#">Get started</a></li>
+          <button (click)="openModal()">Open Video Modal</button>
+          <app-video-modal [showModal]="modalOpen"></app-video-modal>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+</div>

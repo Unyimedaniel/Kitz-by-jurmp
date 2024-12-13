@@ -8,7 +8,11 @@
 }
 
 .animate-marquee {
-  animation: marquee 40s linear infinite;
+  // animation: marquee 40s linear infinite;
+
+  @media screen and (max-width: 600px) {
+    animation: marquee 40s linear infinite;
+  }
 }
 
 .relative::after {

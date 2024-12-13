@@ -16,7 +16,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { IonicModule } from '@ionic/angular';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
-// import { NbSidebarModule, NbThemeModule } from '@nebular/theme';
+import { NbSidebarModule, NbThemeModule } from '@nebular/theme';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -41,8 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     IonicModule.forRoot(),
     GraphQLModule,
     HttpClientModule,
-    // NbThemeModule.forRoot(),
-    // NbSidebarModule.forRoot(),
+    NbThemeModule.forRoot(),
+    NbSidebarModule.forRoot(),
     provideDatabase(() => getDatabase()),
   ],
   providers: [
